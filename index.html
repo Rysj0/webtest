@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>HUI</title>
+		<link rel="stylesheet" type="text/css" href="hui/css/hui.css" />
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="mui/css/mui.min.css">
+
+		<!--引用jqweui css-->
+		<link rel="stylesheet" href="dist/lib/weui.min.css" />
+		<link rel="stylesheet" href="dist/css/jquery-weui.min.css" />
+
+		<link rel="stylesheet" href="css/index.css" />
+
+	</head>
+
+	<body>
+		<!--头部-->
+		<header class="hui-header">
+			<div class="head-img-logo">
+				<img src="img/logo.jpg" />
+			</div>
+			<div id="hui-header-sreach">
+				<div id="hui-header-sreach-icon"></div>
+				<form action="search.html">
+					<input type="submit" id="searchKey" value="请输入商品关键字" style="background: #FFFFFF;" /></form>
+			</div>
+			<div class="head-img-login">
+				<img src="img/wode1.png" />
+			</div>
+		</header>
+
+		<!--头部照片-->
+
+		<div class="hui-news-list">
+			<ul>
+				<li>
+					<div class="hui-news-list-img">
+						<img src="img/kuailezhijia.jpg" />
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+		<!--头部导航-->
+		<div class="mui-content">
+
+			<div class="head-nav">
+				<nav>
+					<ul class="clearfix">
+						<li>
+							<a href="#">
+								<img src="img/z.png" alt="" />
+								<p>招商加盟</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/x.png" alt="" />
+								<p>全国体验店</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/c.png" alt="" />
+								<p>美居乐学院</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/v.png" alt="" />
+								<p>关于美居乐</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/b.png" alt="" />
+								<p>买家SHOW</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/n.png" alt="" />
+								<p>全国联动</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/m.png" alt="" />
+								<p><span style="color: #FFBE00;">400-830-6028</span></p>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+		</div>
+		<div style="width:100%; border:2px solid #999999;"></div>
+
+		<!--中部-->
+
+		<!--新体验-->
+		<div class="hui-common-title">
+			<div class="hui-common-title-line"></div>
+			<div class="hui-common-title-txt">
+				<p><span>美居乐</span> — 选择家居窗帘<span>新体验</span></p>
+			</div>
+			<div class="hui-common-title-line"></div>
+		</div>
+		<!--新体验内容-->
+		<div class="hui-img-list" id="list2">
+			<ul>
+				<li>
+					<h1><span>NO.1</span></h1>
+					<a href="javascript:hui.toast('hi...');">
+						<img src="img/tccx-pp1.jpg" />
+						<div class="hui-img-list-content">
+							<p>产品特效:</p>
+						</div>
+						<div class="experience-p-style">
+							<p>原创设计，顶级项目，专属定制，打造心中的家。</p>
+						</div>
+
+					</a>
+				</li>
+
+				<li>
+					<h1>NO.2</h1>
+					<a href="javascript:hui.toast('hi...');">
+						<img src="img/tccx-pp2.jpg" />
+						<div class="hui-img-list-content">
+							<p>品类齐全:</p>
+						</div>
+						<div class="experience-p-style">
+							<p>清爽时尚为主，多系列产品齐全，满足您家里的各种需求。</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="hui-img-list" id="list2">
+			<ul>
+				<li>
+					<h1><span>NO.3</span></h1>
+					<a href="javascript:hui.toast('hi...');">
+						<img src="img/tccx-pp3.png" />
+						<div class="hui-img-list-content">
+							<p>O2O模式:</p>
+						</div>
+						<div class="experience-p-style">
+							<p>兼顾线上与线下的服务与质量，让你买得开心，用得放心。</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<h1>NO.4</h1>
+					<a href="javascript:hui.toast('hi...');">
+						<img src="img/tccx-pp4.png" />
+						<div class="hui-img-list-content">
+							<p>关注美居乐:</p>
+						</div>
+						<div class="experience-p-style">
+							<p>二维码扫时代一扫，新品活动直达，让你享价、享值，畅享新体验。</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--挑选-->
+		<div class="hui-common-title">
+			<div class="hui-common-title-line"></div>
+			<div class="hui-common-title-txt">
+				<p><span>美居乐</span> —六大系列任君<span>挑选</span></p>
+			</div>
+			<div class="hui-common-title-line"></div>
+		</div>
+		<!--挑选轮播-->
+
+		<div class="hui-swipe" id="swipe">
+			<div class="hui-swipe-items">
+				<div class="hui-swipe-item"><img src="mui/images/cbd.jpg" /></div>
+				<div class="hui-swipe-item"><img src="mui/images/shuijiao.jpg" /></div>
+				<div class="hui-swipe-item"><img src="mui/images/yuantiao.jpg"></div>
+				<div class="hui-swipe-item"><img src="mui/images/cbd.jpg" /></div>
+
+			</div>
+		</div>
+		<!--挑选内容-->
+		<!--左边导航栏-->
+		<div class="left">
+
+			<ul>
+				<li class="nav-content-color">
+					<a href="#tab1">
+						<div class="wrap-main-num">
+							<div class="wrap-main-left">
+								<span>01</span>
+							</div>
+							<div class="wrap-main-right">
+								<p class="span-styles"><span>温馨浪漫系列</span></p>
+								<p class="span-style"><span>WARM AND</span></p>
+								<p class="span-style"><span>ROMANTIC SERIES</span></p>
+							</div>
+						</div>
+
+					</a>
+				</li>
+				<li>
+					<a href="#tab2">
+						<div class="wrap-main-num">
+							<div class="wrap-main-left">
+								<span>02</span>
+							</div>
+							<div class="wrap-main-right">
+								<p class="span-styles"><span>春夏休闲系列</span></p>
+								<p class="span-style"><span>WARM AND</span></p>
+								<p class="span-style"><span>ROMANTIC SERIES</span></p>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#tab3">
+						<div class="wrap-main-num">
+							<div class="wrap-main-left">
+								<span>03</span>
+							</div>
+							<div class="wrap-main-right">
+								<p class="span-styles"><span>青少年系列</span></p>
+								<p class="span-style"><span>WARM AND</span></p>
+								<p class="span-style"><span>ROMANTIC SERIES</span></p>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#tab4">
+						<div class="wrap-main-num">
+							<div class="wrap-main-left">
+								<span>04</span>
+							</div>
+							<div class="wrap-main-right">
+								<p class="span-styles"><span>新中式系列</span></p>
+								<p class="span-style"><span>WARM AND</span></p>
+								<p class="span-style"><span>ROMANTIC SERIES</span></p>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#tab5">
+						<div class="wrap-main-num">
+							<div class="wrap-main-left">
+								<span>05</span>
+							</div>
+							<div class="wrap-main-right">
+								<p class="span-styles"><span>现代客厅系列</span></p>
+								<p class="span-style"><span>WARM AND</span></p>
+								<p class="span-style"><span>ROMANTIC SERIES</span></p>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#tab6">
+						<div class="wrap-main-num">
+							<div class="wrap-main-left">
+								<span>06</span>
+							</div>
+							<div class="wrap-main-right">
+								<p class="span-styles"><span>欧式奢华系列</span></p>
+								<p class="span-style"><span>WARM AND</span></p>
+								<p class="span-style"><span>ROMANTIC SERIES</span></p>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+
+		</div>
+		<!--右边图片-->
+		<div id="demo2">
+			<div class="demo2" id="tab1">
+				<!--1-->
+				<div class="wrap-main-top">
+					<div class="wrap-main-true">
+						<ul>
+							<li>
+								<img src="img/9F.jpg" />
+							</li>
+							<li>
+								<img src="img/6C.jpg" />
+							</li>
+							<li>
+								<img src="img/6C.jpg" />
+							</li>
+							<li>
+								<img src="img/6C.jpg" />
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--2-->
+				<div class="wrap-main-top">
+					<div class="wrap-main-true">
+						<ul>
+							<li>
+								<img src="img/67.jpg" />
+							</li>
+							<li>
+								<img src="img/B6.jpg" />
+							</li>
+							<li>
+								<img src="img/B6.jpg" />
+							</li>
+							<li>
+								<img src="img/6C.jpg" />
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="demo2" id="tab2">
+				<!--1-->
+				<div class="wrap-main-top">
+					<div class="wrap-main-true">
+						<ul>
+							<li>
+								<img src="img/9F.jpg" />
+							</li>
+							<li>
+								<img src="img/6C.jpg" />
+							</li>
+							<li>
+								<img src="img/6C.jpg" />
+							</li>
+							<li>
+								<img src="img/6C.jpg" />
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--2-->
+				<div class="wrap-main-top">
+					<div class="wrap-main-true">
+						<ul>
+							<li>
+								<img src="img/67.jpg" />
+							</li>
+							<li>
+								<img src="img/B6.jpg" />
+							</li>
+							<li>
+								<img src="img/B6.jpg" />
+							</li>
+							<li>
+								<img src="img/6C.jpg" />
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="demo2" id="tab3">
+				<!--1-->
+				<div class="wrap-main-top">
+					<div class="wrap-main-true">
+						<ul>
+							<li>
+								<img src="img/9F.jpg" />
+							</li>
+							<li>
+								<img src="img/6C.jpg" />
+							</li>
+							<li>
+								<img src="img/6C.jpg" />
+							</li>
+							<li>
+								<img src="img/6C.jpg" />
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--2-->
+				<div class="wrap-main-top">
+					<div class="wrap-main-true">
+						<ul>
+							<li>
+								<img src="img/67.jpg" />
+							</li>
+							<li>
+								<img src="img/B6.jpg" />
+							</li>
+							<li>
+								<img src="img/B6.jpg" />
+							</li>
+							<li>
+								<img src="img/6C.jpg" />
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+			<div class="demo2" id="tab4">
+				<!--1-->
+				<div class="wrap-main-top">
+					<div class="wrap-main-true">
+						<ul>
+							<li>
+								<img src="img/9F.jpg" />
+							</li>
+							<li>
+								<img src="img/6C.jpg" />
+							</li>
+							<li>
+								<img src="img/6C.jpg" />
+							</li>
+							<li>
+								<img src="img/6C.jpg" />
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--2-->
+				<div class="wrap-main-top">
+					<div class="wrap-main-true">
+						<ul>
+							<li>
+								<img src="img/67.jpg" />
+							</li>
+							<li>
+								<img src="img/B6.jpg" />
+							</li>
+							<li>
+								<img src="img/B6.jpg" />
+							</li>
+							<li>
+								<img src="img/6C.jpg" />
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="demo2" id="tab5">
+				<!--1-->
+				<div class="wrap-main-top">
+					<div class="wrap-main-true">
+						<ul>
+							<li>
+								<img src="img/9F.jpg" />
+							</li>
+							<li>
+								<img src="img/6C.jpg" />
+							</li>
+							<li>
+								<img src="img/6C.jpg" />
+							</li>
+							<li>
+								<img src="img/6C.jpg" />
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--2-->
+				<div class="wrap-main-top">
+					<div class="wrap-main-true">
+						<ul>
+							<li>
+								<img src="img/67.jpg" />
+							</li>
+							<li>
+								<img src="img/B6.jpg" />
+							</li>
+							<li>
+								<img src="img/B6.jpg" />
+							</li>
+							<li>
+								<img src="img/6C.jpg" />
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="demo2" id="tab6">
+				<!--1-->
+				<div class="wrap-main-top">
+					<div class="wrap-main-true">
+						<ul>
+							<li>
+								<img src="img/9F.jpg" />
+							</li>
+							<li>
+								<img src="img/6C.jpg" />
+							</li>
+							<li>
+								<img src="img/6C.jpg" />
+							</li>
+							<li>
+								<img src="img/6C.jpg" />
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--2-->
+				<div class="wrap-main-top">
+					<div class="wrap-main-true">
+						<ul>
+							<li>
+								<img src="img/67.jpg" />
+							</li>
+							<li>
+								<img src="img/B6.jpg" />
+							</li>
+							<li>
+								<img src="img/B6.jpg" />
+							</li>
+							<li>
+								<img src="img/6C.jpg" />
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		<!--优势-->
+		<div class="hui-common-title">
+			<div class="hui-common-title-line"></div>
+			<div class="hui-common-title-txt">
+				<p><span>美居乐</span> —我们的<span>六大优势</span></p>
+			</div>
+			<div class="hui-common-title-line"></div>
+		</div>
+		<!--优势内容-->
+
+		<div class="wrap-adv-list">
+			<ul>
+				<li class="wrap-adv-title">
+					<p>优势一： 色彩绚丽</p>
+				</li>
+				<li class="wrap-adv-words">
+					<p>色彩： 为你量身定制符合“色彩疗法”的愉悦家居</p>
+				</li>
+				<li class="wrap-adv-content">
+					<p>美居乐借鉴国内外专家关于“色彩疗法”研究成果，与国内中山大学等机构著名心理专家、 色彩专家总结出中西合璧的“六根理论”。 即：眼、耳、鼻、舌、身、意，运用到窗帘设计过程之中，让您的家成为您的心灵健康乐园。
+					</p>
+				</li>
+				<li>
+					<img src="img/service-pp1.jpg" />
+				</li>
+			</ul>
+		</div>
+
+		<div class="wrap-adv-list">
+			<ul>
+				<li class="wrap-adv-title">
+					<p>优势二： 产品时尚</p>
+				</li>
+				<li class="wrap-adv-words">
+					<p>款式新颖： 让您的时尚品味提现到每一个细节</p>
+				</li>
+				<li class="wrap-adv-content">
+					<p>美居乐与韩国釜山设计中心、广州美术学院等50多家特级设计机构合作， 每年参与意大利米兰、德国法兰克福等国际设计潮流展会， 设计师结合中华民族传统文化精髓，提炼设计元素，创新表现形式， 软装配套设计方案直到您满意！
+					</p>
+				</li>
+				<li>
+					<img src="img/service1.jpg" width="100%" />
+				</li>
+			</ul>
+		</div>
+		<div class="wrap-adv-list">
+			<ul>
+				<li class="wrap-adv-title">
+					<p>优势三： 环保健康</p>
+				</li>
+				<li class="wrap-adv-words">
+					<p>产品绿色环保， 为您的健康再添加一份保障</p>
+				</li>
+				<li class="wrap-adv-content">
+					<p>产品通过国家权威检测机关检测合格，甲醛含量、PH值、可分解芳香胺燃料 （禁用偶氮染料、致癌物质），纺织品三项重要检测指标含量均远低于《GB18401-2010 国家纺织产品基本安全技术规范》基本标准，纯环保绿色产品，为您的健康保驾护航！
+					</p>
+				</li>
+				<li>
+					<img src="img/service3.jpg" width="100%" />
+				</li>
+			</ul>
+		</div>
+
+		<div class="wrap-adv-list">
+			<ul>
+				<li class="wrap-adv-title">
+					<p>优势四： 品质保障</p>
+				</li>
+				<li class="wrap-adv-words">
+					<p>20多年专注做软装，品质有保障</p>
+				</li>
+				<li class="wrap-adv-content">
+					<p>美居乐20多年专注做软装装配套行业，坚持自主研发工艺及自主生产， 工艺师多次荣获“全国纺织行业技术能手”、“染化料配制工职业技能优秀操作能手”等殊荣， 产品多次荣获"最佳工艺创新奖"、”新产品评价推介金奖“等殊荣；品质优良稳定，耐晒、 耐洗、耐摩擦，深得新老客户一致赞誉！
+					</p>
+				</li>
+				<li>
+					<img src="img/service4.jpg" width="100%" />
+				</li>
+			</ul>
+		</div>
+
+		<div class="wrap-adv-list">
+			<ul>
+				<li class="wrap-adv-title">
+					<p>优势五： 实力保证</p>
+				</li>
+				<li class="wrap-adv-words">
+					<p>行业内龙头企业，品牌实力有保证</p>
+				</li>
+				<li class="wrap-adv-content">
+					<p>广东家纺协会、中国家纺协会理事单位，最佳布艺知名品牌，权威机构认证 颁发；多次荣获新产品评比金奖、流行面料奖、窗帘配套设计奖等殊荣。我们 不找明星代言，只为不误导客户选择；不做央视标王广告，只为不给客户增加成本。 扎扎实实，用心做好产品、做好服务！
+					</p>
+				</li>
+				<li>
+					<img src="img/server5.jpg" width="100%" />
+				</li>
+			</ul>
+		</div>
+
+		<div class="wrap-adv-list">
+			<ul>
+				<li class="wrap-adv-title">
+					<p>优势六： 交货准时</p>
+				</li>
+				<li class="wrap-adv-words">
+					<p>交货准时，保值保量</p>
+				</li>
+				<li class="wrap-adv-content">
+					<p>美居乐自有工厂生产，货源充足稳定供应； 厂家送货保证安全（与专业快运公司合作，时间有保障， 交货更准时，产品数量、质量更有保证）。
+					</p>
+				</li>
+				<li>
+					<img src="img/server6.png" width="100%" />
+				</li>
+			</ul>
+		</div>
+
+		<!--评价-->
+		<div class="hui-common-title">
+			<div class="hui-common-title-line"></div>
+			<div class="hui-common-title-txt">
+				<p><span>美居乐</span> —客户的<span>评价</span></p>
+			</div>
+			<div class="hui-common-title-line"></div>
+		</div>
+
+		<!--评价内容-->
+		<div class="hui-img-list" id="list3">
+			<ul>
+				<li>
+					<a href="javascript:hui.toast('hi...');">
+						<img src="img/7.jpg" />
+						<div class="hui-img-list-contents">
+							<h1>长沙碧桂园威尼斯城魏女士</h1>
+							<p>
+								美居乐窗帘品质优秀，设计新颖，配送及时， 售后好，值得推荐，我家2014年8月份用了他们的窗帘， 亲朋好友看了都夸好。
+							</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:hui.toast('hi...');">
+						<img src="img/8.jpg" />
+						<div class="hui-img-list-contents">
+							<h1>佛山奥园陈先生</h1>
+							<p>
+								现在的窗帘品质多，厂家也多， 在几经比较后，我还是选择了美居乐， 用了美居乐一段时间了，总体感觉很好...
+							</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="hui-img-list" id="list3">
+			<ul>
+				<li>
+					<a href="javascript:hui.toast('hi...');">
+						<img src="img/4.jpg" />
+						<div class="hui-img-list-contents">
+							<h1>浙江客户徐先生</h1>
+							<p>
+								目前，在市面上可以了解 到"美居乐"以它的强大正在成为整 个中国首屈一指的窗帘布艺名店...
+							</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:hui.toast('hi...');">
+						<img src="img/10.png" />
+
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--推荐-->
+		<div class="hui-common-title">
+			<div class="hui-common-title-line"></div>
+			<div class="hui-common-title-txt">
+				<p><span>行业精英</span> —联袂向你<span>推荐</span></p>
+			</div>
+			<div class="hui-common-title-line"></div>
+		</div>
+		<!--推荐内容-->
+		<div class="recommend-eav-top">
+			<!--图片-->
+			<img src="img/5.jpg" />
+
+		</div>
+		<!--文字-->
+		<div class="recommend-eav-top">
+
+			<ul>
+
+				<li class="recommend-commen-title">
+					<p>广州美术学院霍康教授</p>
+				</li>
+				<li class="recommend-commen-content">
+					<p>
+						"染织艺术设计专业属产品设计的范畴，其发展的方向与我国 纺织工业的发展息息相关。美居乐窗帘引用国外进口染料， 从源头上顺应广大消费者的要求；煮炼、洗水、定型等系统完整流程， 让每一件成品在二次清洁的时候，不再为色调、尺寸变化而烦恼， 美居乐窗帘值得每位消费者拥有！"
+					</p>
+				</li>
+			</ul>
+
+		</div>
+
+		<!--文字-->
+		<div class="recommend-eav-top">
+
+			<ul>
+
+				<li class="recommend-commen-title">
+					<p>齐月色彩创始人/院长张艳</p>
+				</li>
+				<li class="recommend-commen-content">
+					<p>
+						"软装在家居装饰中扮演者角色越来越重要，而色彩在软装搭配中 是极为重要的一个部分，合理的色彩搭配为家居增光添彩。美居 乐紧紧围绕色彩而设计，始终贯彻整体软装色彩搭配，产品时尚、 色彩圆润，渗透在我们生活的点点滴滴。"
+					</p>
+				</li>
+			</ul>
+
+		</div>
+		<div class="recommend-eav-top">
+			<!--图片-->
+			<img src="img/6.jpg" />
+
+		</div>
+
+		<div class="recommend-eav-top">
+			<!--图片-->
+			<img src="img/s.jpg" />
+
+		</div>
+		<!--文字-->
+		<div class="recommend-eav-top">
+
+			<ul>
+
+				<li class="recommend-commen-title">
+					<p>和君智业康玎</p>
+				</li>
+				<li class="recommend-commen-content">
+					<p>
+						"美居乐专属定制移动商学院，标志着美居乐培训体系掀开 了新篇章，开启随时随地自主学习新时代！塑造品牌实力， 系统传播行业知识，全面讲解美居乐产品知识。涵盖最 新产品发布、产品体验实验、销售百问百答等，让加盟商从 容面对市场挑战，运筹帷幄，决胜商场。"
+					</p>
+				</li>
+			</ul>
+
+		</div>
+
+		<!--文字-->
+		<div class="recommend-eav-top">
+
+			<ul>
+
+				<li class="recommend-commen-title">
+					<p>三维家总裁蔡志森</p>
+				</li>
+				<li class="recommend-commen-content">
+					<p>
+						"时代不断的进步，技术不断的更新，我们的步伐也要紧随着发 展前进、创新。美居乐采用三维家技术，率先走在行业的 前端，开启行业技术化的发展。通过整体家居的搭配和窗帘的结 合，让每家每户都能提前遇见自己未来的家！”
+					</p>
+				</li>
+			</ul>
+
+		</div>
+		<div class="recommend-eav-top">
+			<!--图片-->
+			<img src="img/a.jpg" />
+
+		</div>
+		<div class="recommend-eav-top">
+			<!--图片-->
+			<img src="img/c.jpg" />
+
+		</div>
+		<!--文字-->
+		<div class="recommend-eav-top">
+
+			<ul>
+
+				<li class="recommend-commen-title">
+					<p>意大利设计师</p>
+				</li>
+				<li class="recommend-commen-content">
+					<p>
+						"软装设计越来越受到中高端客户的青睐，客户更多 的注重品牌影响力、产品质量、产品安全性，这 些都是现在软装的发展趋势。单纯布艺软装这一块，会 占软装总体费用的15-20%左右，客户在首次装修时更加 注重风格乃至于软装整体搭配效果，这就是我们所表达的 软装搭配流行趋势。"
+					</p>
+				</li>
+			</ul>
+
+		</div>
+
+		<!--门面-->
+		<div class="hui-common-title">
+			<div class="hui-common-title-line"></div>
+			<div class="hui-common-title-txt">
+				<p><span>美居乐</span> —我们<span>全国的门面</span></p>
+			</div>
+			<div class="hui-common-title-line"></div>
+		</div>
+		<!--门面照片-->
+		<div class="wrap-face-img">
+			<img src="img/v.jpg">
+			<div class="wrap-face-img">
+				<!--报道-->
+				<div class="hui-common-title">
+					<div class="hui-common-title-line"></div>
+					<div class="hui-common-title-txt">
+						<p><span>美居乐</span> —我们<span>全国的报道</span></p>
+					</div>
+					<div class="hui-common-title-line"></div>
+				</div>
+
+				<!--报道图片-->
+
+				<div class="wrap-face-img">
+					<img src="img/q.png" />
+				</div>
+
+				<!--成绩-->
+				<div class="hui-common-title">
+					<div class="hui-common-title-line"></div>
+					<div class="hui-common-title-txt">
+						<p><span>美居乐</span> —我们的<span>成绩</span></p>
+					</div>
+					<div class="hui-common-title-line"></div>
+				</div>
+
+				<!--成绩轮播-->
+
+				<!--<div class="slider_four_in_line">
+					
+					<img src="img/e.jpg" />
+					<img src="img/r.jpg" />
+					<img src="img/A7.jpg" />
+					<img src="img/0A.jpg" />
+
+					<img src="img/62.jpg" />
+					<img src="img/80.jpg" />
+					<img src="img/4B.jpg" />
+
+					<img src="img/58.jpg" />
+					<img src="img/73.jpg" />
+					<!--<div class="next_button"></div>
+					<div class="prev_button"> </div>-->
+				<!--</div>-->
+
+				<div class="hui-swipe" id="swipe2">
+
+					<div class="hui-swipe-items">
+						<div class="hui-swipe-item"><img src="img/62.jpg" /></div>
+						<div class="hui-swipe-item"><img src="img/r.jpg" /></div>
+						<div class="hui-swipe-item"><img src="img/4B.jpg"></div>
+						<div class="hui-swipe-item"><img src="img/2E.jpg" /></div>
+					</div>
+
+				</div>
+				<!-- 避免底部遮住商品展示-->
+				<div style="height:75px; line-height:75px; clear:both;"></div>
+
+				<!--底部-->
+				<div class="weui-tabbar" style="background-color: #FFFFFF; position: fixed;
+				z-index: 999;">
+					<a href="javascript:;" class="weui-tabbar__item weui-bar__item--on">
+						<!-- <span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span>-->
+						<div class="weui-tabbar__icon">
+							<img src="img/l.png" alt="">
+						</div>
+						<p class="weui-tabbar__label" style="color: #FF9224">首页</p>
+					</a>
+					<a href="product.html" class="weui-tabbar__item">
+						<div class="weui-tabbar__icon">
+							<img src="img/0.png" alt="">
+						</div>
+						<p class="weui-tabbar__label" style="color: #ADADAD">产品中心</p>
+					</a>
+					<a href="find.html" class="weui-tabbar__item">
+						<div class="weui-tabbar__icon">
+							<img src="img/faxian1.png" alt="">
+						</div>
+						<p class="weui-tabbar__label" style="color: #ADADAD">发现</p>
+					</a>
+					<a href="wode.html" class="weui-tabbar__item">
+						<div class="weui-tabbar__icon">
+							<img src="img/wode1.png" alt="">
+						</div>
+						<p class="weui-tabbar__label" style="color: #ADADAD">我的</p>
+					</a>
+				</div>
+
+				<script src="hui/js/hui.js" type="text/javascript" charset="utf-8"></script>
+				<script src="hui/js/hui-swipe.js" type="text/javascript" charset="utf-8"></script>
+
+				<script src="dist/lib/jquery-2.1.4.js"></script>
+				<script src="dist/js/swiper.min.js"></script>
+				<script src="dist/js/city-picker.min.js"></script>
+
+				<script type="text/javascript">
+					//	挑选轮播
+					var swipe = new huiSwpie('#swipe');
+					swipe.autoPlay = false;
+					swipe.run();
+
+					//挑选内容
+                 
+					//改变左边选中的样式
+					$('.left li').click(function() {
+						$('.left li').removeClass('nav-content-color');
+						$(this).addClass('nav-content-color')
+					})
+
+					//底部轮播
+
+					//	挑选轮播
+					var swipe2 = new huiSwpie('#swipe2');
+					swipe2.delayc = 2000;
+					swipe2.autoPlay = true;
+					swipe2.indicatorOn = true
+					swipe2.run();
+
+					
+
+					//挑选滑动
+					hui('#demo2').scrollY(640);
+
+					
+				</script>
+	</body>
+
+</html>

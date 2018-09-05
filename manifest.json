@@ -1,0 +1,698 @@
+﻿{
+	"@platforms": [
+		"android",
+		"iPhone",
+		"iPad"
+	],
+	"id": "H58A084E6",/*应用的标识，创建应用时自动生成，勿手动修改*/
+	"name": "webtest",/*应用名称，程序桌面图标名称*/
+	"version": {
+		"name": "1.0",/*应用版本名称*/
+		"code": ""
+	},
+	"description": "测试代码",/*应用描述信息*/
+	"icons": {
+		"72": "icon.png"
+	},
+	"launch_path": "index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"developer": {
+		"name": "",/*开发者名称*/
+		"email": "",/*开发者邮箱地址*/
+		"url": ""
+	},
+	"permissions": {
+		"Messaging": {
+			"description": "短彩邮件插件"
+		},
+		"Cache": {
+			"description": "管理应用缓存"
+		},
+		"Console": {
+			"description": "跟踪调试输出日志"
+		},
+		"Contacts": {
+			"description": "访问系统联系人信息"
+		},
+		"Events": {
+			"description": "应用扩展事件"
+		},
+		"Maps": {
+			"description": "管理地图插件"
+		},
+		"Speech": {
+			"description": "管理语音识别插件"
+		}
+	},
+	"plus": {
+		"splashscreen": {
+			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+			"waiting": true
+		},
+		"popGesture": "close",/*设置应用默认侧滑返回关闭Webview窗口，"none"为无侧滑返回功能，"hide"为侧滑隐藏Webview窗口。参考http://ask.dcloud.net.cn/article/102*/
+		"runmode": "normal",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
+		"distribute": {
+			"apple": {
+				"appid": "",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+				"mobileprovision": "",/*iOS应用打包配置文件*/
+				"password": "",/*iOS应用打包个人证书导入密码*/
+				"p12": "",/*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+				"devices": "universal",/*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+				"frameworks": []
+			},
+			"google": {
+				"packagename": "",/*Android应用包名，如io.dcloud.HelloH5*/
+				"keystore": "",/*Android应用打包使用的密钥库文件*/
+				"password": "",/*Android应用打包使用密钥库中证书的密码*/
+				"aliasname": "",/*Android应用打包使用密钥库中证书的别名*/
+				"permissions": [
+					"<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+					"<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
+					"<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+					"<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+					"<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+					"<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.CAMERA\"/>",
+					"<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+					"<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+					"<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+					"<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+					"<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+					"<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+					"<uses-feature android:name=\"android.hardware.camera\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+					"<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+				]
+			},
+			"orientation": [
+				"portrait-primary",
+				"portrait-secondary",
+				"landscape-primary",
+				"landscape-secondary"
+			],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+			"icons": {
+				"ios": {
+					"prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
+					/*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+					"iphone": {
+						"normal": "", /*iPhone3/3GS程序图标，分辨率：57x57*/
+						"retina": "", /*iPhone4程序图标，分辨率：114x114*/
+						/*iPhone4S/5/6程序图标，分辨率：120x120*/
+						/*iPhone6 Plus程序图标，分辨率：180x180*/
+						"spotlight-normal": "", /*iPhone3/3GS Spotlight搜索程序图标，分辨率：29x29*/
+						"spotlight-retina": "", /*iPhone4 Spotlight搜索程序图标，分辨率：58x58*/
+						/*iPhone4S/5/6 Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "", /*iPhone4设置页面程序图标，分辨率：29x29*/
+						/*iPhone4S/5/6设置页面程序图标，分辨率：58x58*/
+						"app@2x": "unpackage/res/icons/120x120.png",
+						"app@3x": "unpackage/res/icons/180x180.png",
+						"settings@3x": "unpackage/res/icons/87x87.png",
+						"settings@2x": "unpackage/res/icons/58x58.png",
+						"spotlight@2x": "unpackage/res/icons/80x80.png",
+						"spotlight@3x": "unpackage/res/icons/120x120.png",
+						"notification@3x": "unpackage/res/icons/60x60.png",
+						"notification@2x": "unpackage/res/icons/40x40.png"
+					},
+					"ipad": {
+						"normal": "", /*iPad普通屏幕程序图标，分辨率：72x72*/
+						"retina": "", /*iPad高分屏程序图标，分辨率：144x144*/
+						/*iPad iOS7程序图标，分辨率：76x76*/
+						/*iPad iOS7高分屏程序图标，分辨率：152x152*/
+						"spotlight-normal": "", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+						"spotlight-retina": "", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+						/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+						/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						/*iPad设置页面程序图标，分辨率：29x29*/
+						"app": "unpackage/res/icons/76x76.png",
+						"app@2x": "unpackage/res/icons/152x152.png",
+						"settings": "unpackage/res/icons/29x29.png",
+						"proapp@2x": "unpackage/res/icons/167x167.png",
+						"spotlight": "unpackage/res/icons/40x40.png",
+						"settings@2x": "unpackage/res/icons/58x58.png",
+						"spotlight@2x": "unpackage/res/icons/80x80.png",
+						"notification": "unpackage/res/icons/20x20.png",
+						"notification@2x": "unpackage/res/icons/40x40.png"
+					},
+					"appstore": "unpackage/res/icons/1024x1024.png"
+				},
+				"android": {
+					"mdpi": "unpackage/res/icons/48x48.png", /*普通屏程序图标，分辨率：48x48*/
+					"ldpi": "unpackage/res/icons/48x48.png", /*大屏程序图标，分辨率：48x48*/
+					"hdpi": "unpackage/res/icons/72x72.png", /*高分屏程序图标，分辨率：72x72*/
+					"xhdpi": "unpackage/res/icons/96x96.png",/*720P高分屏程序图标，分辨率：96x96*/
+					"xxhdpi": "unpackage/res/icons/144x144.png",
+					"xxxhdpi": "unpackage/res/icons/192x192.png"
+				}
+			},
+			"splashscreen": {
+				"ios": {
+					"iphone": {
+						"default": "", /*iPhone3启动图片选，分辨率：320x480*/
+						"retina35": "",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
+						"retina40": "",/*4.0 英寸设备(iPhone5/iPhone5s)启动图片，分辨率：640x1136*/
+						"retina47": "",/*4.7 英寸设备(iPhone6)启动图片，分辨率：750x1334*/
+						"retina55": "",/*5.5 英寸设备(iPhone6 Plus)启动图片，分辨率：1242x2208*/
+						"retina55l": ""
+					},
+					"ipad": {
+						"portrait": "", /*iPad竖屏启动图片，分辨率：768x1004*/
+						"portrait-retina": "",/*iPad高分屏竖屏图片，分辨率：1536x2008*/
+						"landscape": "", /*iPad横屏启动图片，分辨率：1024x748*/
+						"landscape-retina": "", /*iPad高分屏横屏启动图片，分辨率：2048x1496*/
+						"portrait7": "", /*iPad iOS7竖屏启动图片，分辨率：768x1024*/
+						"portrait-retina7": "",/*iPad iOS7高分屏竖屏图片，分辨率：1536x2048*/
+						"landscape7": "", /*iPad iOS7横屏启动图片，分辨率：1024x768*/
+						"landscape-retina7": ""
+					}
+				},
+				"android": {
+					"mdpi": "", /*普通屏启动图片，分辨率：240x282*/
+					"ldpi": ""
+				}
+			}
+		},
+		"ads": {
+			"rp": true,
+			"splash": true,
+			"push": true
+		},
+		"adid": ""
+	},
+	"dependencies": {
+		"pages": {
+			"wode.html": {
+				"href": "wode.html",
+				"resources": [
+					"hui/css/hui.css",
+					"hui/css/fonts/iconfont.eot",
+					"hui/css/fonts/iconfont.woff",
+					"hui/css/fonts/iconfont.ttf",
+					"hui/css/fonts/iconfont.svg",
+					"css/find.css",
+					"dist/lib/weui.min.css",
+					"dist/css/jquery-weui.min.css",
+					"img/l-1.png",
+					"img/0.png",
+					"img/faxian1.png",
+					"hui/js/hui.js",
+					"dist/demos/images/avatar.jpg",
+					"hui/img/list/sc.png",
+					"hui/img/list/ht.png",
+					"hui/img/list/order.png",
+					"hui/img/list/lishi.png"
+				],
+				"refer": [
+					"index.html",
+					"products.html",
+					"find.html"
+				],
+				"priority": 2
+			},
+			"find.html": {
+				"href": "find.html",
+				"resources": [
+					"hui/css/hui.css",
+					"hui/css/fonts/iconfont.eot",
+					"hui/css/fonts/iconfont.woff",
+					"hui/css/fonts/iconfont.ttf",
+					"hui/css/fonts/iconfont.svg",
+					"css/find.css",
+					"dist/lib/weui.min.css",
+					"dist/css/jquery-weui.min.css",
+					"hui/js/hui.js",
+					"dist/lib/jquery-2.1.4.js",
+					"dist/js/jquery-weui.min.js",
+					"dist/js/swiper.min.js",
+					"dist/js/city-picker.min.js",
+					"img/l-1.png",
+					"img/0.png",
+					"img/faxian.png",
+					"img/wode1.png",
+					"hui/img/medialist/3.jpg",
+					"hui/img/medialist/1.jpg",
+					"hui/img/medialist/2.jpg"
+				],
+				"refer": [
+					"products.html",
+					"wode.html"
+				],
+				"priority": 1
+			},
+			"search.html": {
+				"href": "search.html",
+				"resources": [
+					"hui/css/hui.css",
+					"hui/css/fonts/iconfont.eot",
+					"hui/css/fonts/iconfont.woff",
+					"hui/css/fonts/iconfont.ttf",
+					"hui/css/fonts/iconfont.svg",
+					"css/find.css",
+					"hui/js/hui.js"
+				],
+				"priority": 3
+			},
+			"products.html": {
+				"href": "products.html",
+				"resources": [
+					"css/products.css",
+					"css/base.css",
+					"dist/lib/weui.min.css",
+					"dist/css/jquery-weui.min.css",
+					"hui/js/hui.js",
+					"dist/lib/jquery-2.1.4.js",
+					"dist/js/jquery-weui.min.js",
+					"dist/js/swiper.min.js",
+					"dist/js/city-picker.min.js",
+					"img/kuailezhijia.jpg",
+					"img/jjfa-left.png",
+					"img/search.png",
+					"img/l-1.png",
+					"img/k.png",
+					"img/faxian1.png",
+					"img/wode1.png",
+					"img/BE.jpg",
+					"img/ee.jpg",
+					"img/rr.jpg",
+					"img/tt.jpg",
+					"img/yy.jpg",
+					"img/uu.jpg",
+					"img/ii.jpg",
+					"img/oo.jpg",
+					"img/qq.jpg"
+				],
+				"refer": [
+					"index.html",
+					"find.html",
+					"wode.html",
+					"search.html"
+				],
+				"priority": 0
+			},
+			"index.html": {
+				"href": "index.html",
+				"resources": [
+					"css/index.css",
+					"img/logo.jpg",
+					"img/search.png",
+					"img/jjfa-left.png",
+					"img/jjfa-right.png",
+					"css/base.css",
+					"dist/lib/weui.min.css",
+					"dist/css/jquery-weui.min.css",
+					"css/jquery.easy_slides.css",
+					"img/03.jpg",
+					"img/01.jpg",
+					"img/05.jpg",
+					"img/02.jpg",
+					"img/04.jpg",
+					"dist/lib/jquery-2.1.4.js",
+					"dist/js/jquery-weui.min.js",
+					"dist/js/swiper.min.js",
+					"dist/js/city-picker.min.js",
+					"js/jquery.easy_slides.js",
+					"img/kuailezhijia.jpg",
+					"img/wode1.png",
+					"img/v.jpg",
+					"img/q.png",
+					"img/e.jpg",
+					"img/r.jpg",
+					"img/A7.jpg",
+					"img/l.png",
+					"img/0.png",
+					"img/faxian1.png",
+					"img/z.png",
+					"img/x.png",
+					"img/c.png",
+					"img/v.png",
+					"img/b.png",
+					"img/n.png",
+					"img/m.png",
+					"img/service-pp1.jpg",
+					"img/service1.jpg",
+					"img/service3.jpg",
+					"img/service4.jpg",
+					"img/server5.jpg",
+					"img/server6.png",
+					"img/tccx-pp1.jpg",
+					"img/tccx-pp2.jpg",
+					"img/tccx-pp3.png",
+					"img/tccx-pp4.png",
+					"img/9F.jpg",
+					"img/6C.jpg",
+					"img/67.jpg",
+					"img/B6.jpg",
+					"img/7.jpg",
+					"img/8.jpg",
+					"img/4.jpg",
+					"img/10.png",
+					"img/5.jpg",
+					"img/6.jpg",
+					"img/s.jpg",
+					"img/a.jpg",
+					"img/c.jpg"
+				],
+				"refer": [
+					"products.html",
+					"find.html",
+					"wode.html",
+					"search.html"
+				],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"hui/demo/scroll.html",
+				"img/2E.jpg",
+				"hui/img/index/date.png",
+				"hui/img/index/waterfall.png",
+				"hui/img/index/dialog.png",
+				"hui/demo/event.html",
+				"hui/img/index/index.png",
+				"dist/demos/images/icon_nav_icons.png",
+				"hui/img/index/imgpreview.png",
+				"hui/demo/show.html",
+				"hui/update.log",
+				"hui/img/swipe/4.jpg",
+				"dist/demos/gallery.html",
+				"hui/demo/h5window.html",
+				"dist/demos/images/pic_article.png",
+				"img/D8.jpg",
+				"hui/img/index/register.png",
+				"hui/js/hui-swipe.js",
+				"dist/demos/footer.html",
+				"dist/demos/slider.html",
+				"hui/img/index/extend.png",
+				"hui/demo/subpage.html",
+				"hui/demo/search.html",
+				"hui/img/waterfull/water10.jpg",
+				"hui/img/index/cut.png",
+				"img/5C.jpg",
+				"hui/demo/slidemenu.html",
+				"dist/demos/images/icon_nav_dialog.png",
+				"img/shouye.png",
+				"dist/demos/images/avatar2.jpg",
+				"hui/img/index/img2.png",
+				"dist/js/swiper.js",
+				"dist/demos/infinite-with-navbar.html",
+				"hui/img/spiker.png",
+				"hui/img/index/createw.png",
+				"hui/img/waterfull/water7.jpg",
+				"dist/demos/select-test.html",
+				"hui/plug-ins/phoneswipe/photoswipe.min.js",
+				"hui/img/index/account.png",
+				"hui/demo/swiper.html",
+				"dist/demos/images/icon_nav_photo.png",
+				"hui/img/index/create.png",
+				"hui/img/index/range.png",
+				"hui/img/index/loadmore.png",
+				"hui/img/index/on.png",
+				"hui/demo/loading.html",
+				"hui/img/index/scrollnews.png",
+				"hui/demo/popmsg.html",
+				"hui/img/waterfull/water8.jpg",
+				"dist/demos/buttons.html",
+				"hui/demo/button.html",
+				"dist/demos/contacts.html",
+				"hui/img/index/index2.png",
+				"img/A0.jpg",
+				"hui/img/index/progress.png",
+				"hui/img/index/switch.png",
+				"hui/demo/clone.html",
+				"img/service2.jpg",
+				"dist/demos/cell.html",
+				"dist/demos/calendar.html",
+				"dist/demos/images/avatar4.png",
+				"hui/demo/form.html",
+				"hui/demo/refresh.html",
+				"dist/demos/toast.html",
+				"hui/img/footer-logo2.png",
+				"hui/demo/scrollevent.html",
+				"js/jquery-1.11.0.min.js",
+				"img/01.png",
+				"dist/demos/images/icon_nav_msg.png",
+				"dist/demos/infinite.html",
+				"dist/demos/ptr.html",
+				"hui/demo/formcheck.html",
+				"img/wode.png",
+				"dist/demos/icons.html",
+				"hui/demo/icons.html",
+				"dist/demos/loadmore.html",
+				"hui/demo/actionsheet.html",
+				"hui/js/hui-picker.js",
+				"img/D6.jpg",
+				"hui/js/hui-form.js",
+				"hui/img/index/btn.png",
+				"hui/img/index/lazy.png",
+				"hui/img/index/slidemenu.png",
+				"hui/img/index/event.png",
+				"hui/js/hui-accordion.js",
+				"dist/demos/ptr-custom.html",
+				"hui/img/index/picker.png",
+				"hui/demo/html.html",
+				"dist/demos/images/swiper-2.jpg",
+				"hui/img/banner.png",
+				"dist/demos/images/icon_nav_calendar.png",
+				"dist/js/city-picker.js",
+				"hui/img/logo_footer.png",
+				"hui/img/index/msg.png",
+				"hui/img/index/start.png",
+				"hui/img/index/value.png",
+				"hui/img/index/refresh.png",
+				"hui/demo/ajax.html",
+				"hui/js/hui-touch-pwd.js",
+				"hui/img/index/base.png",
+				"img/w.png",
+				"dist/demos/swipeout.html",
+				"dist/demos/images/icon_nav_picker.png",
+				"img/cb.png",
+				"dist/demos/gesture.html",
+				"hui/img/index/ajax.png",
+				"hui/demo/getindex.html",
+				"hui/js/hui-select-beautify.js",
+				"dist/lib/weui.css",
+				"hui/img/index/footer.png",
+				"hui/demo/accordion.html",
+				"hui/img/index/tags.png",
+				"dist/demos/count.html",
+				"dist/demos/photo-browser.html",
+				"dist/demos/flex.html",
+				"hui/demo/medialist.html",
+				"dist/lib/fastclick.js",
+				"hui/demo/range.html",
+				"hui/demo/tags.html",
+				"hui/img/imglist/2.jpg",
+				"dist/demos/uploader.html",
+				"hui/demo/deletedom.html",
+				"hui/img/scrollNews.png",
+				"dist/demos/city-picker.html",
+				"hui/img/index/segment.png",
+				"hui/img/index/number.png",
+				"dist/demos/dialog.html",
+				"hui/demo/swipe.html",
+				"img/pp.jpg",
+				"dist/demos/images/icon_nav_swiper.png",
+				"hui/demo/list.html",
+				"hui/demo/css.html",
+				"dist/demos/images/icon_nav_toast.png",
+				"dist/css/jquery-weui.css",
+				"dist/demos/images/icon_nav_progress.png",
+				"hui/demo/value.html",
+				"css/search.css",
+				"hui/img/index/scroll.png",
+				"hui/demo/select.html",
+				"hui/demo/extend.html",
+				"hui/demo/segment.html",
+				"dist/demos/images/icon_nav_panel.png",
+				"hui/img/swipe/2.jpg",
+				"hui/img/index/deletedom.png",
+				"dist/demos/images/avatar3.jpg",
+				"hui/copy.html",
+				"img/shouye1.png",
+				"hui/img/index/each.png",
+				"hui/demo/eventband.html",
+				"hui/demo/window.html",
+				"dist/demos/images/icon_nav_up.png",
+				"img/DA.jpg",
+				"hui/plug-ins/phoneswipe/photoswipe-ui-default.min.js",
+				"hui/img/index/css.png",
+				"dist/demos/images/icon_nav_datetime.png",
+				"hui/demo/imgnews.html",
+				"dist/demos/select.html",
+				"hui/plug-ins/phoneswipe/preloader.gif",
+				"hui/img/index/accordion.png",
+				"hui/js/hui-tab.js",
+				"img/CF.jpg",
+				"hui/img/index/selecter.png",
+				"hui/img/index/countdown.png",
+				"dist/demos/images/icon_nav_new.png",
+				"hui/js/cities.js",
+				"hui/img/index/hide.png",
+				"dist/demos/css/demos.css",
+				"dist/demos/images/icon_nav_tab.png",
+				"hui/demo/picker.html",
+				"hui/img/index/shaixuan.png",
+				"img/13.jpg",
+				"dist/demos/ptr-with-infinite.html",
+				"dist/demos/images/present.png",
+				"hui/img/index/swipe.png",
+				"hui/img/index/eventband.png",
+				"hui/plug-ins/phoneswipe/photoswipe.css",
+				"dist/demos/toptip.html",
+				"hui/img/startbanner/2.png",
+				"hui/demo/lazy.html",
+				"hui/demo/tab.html",
+				"hui/demo/waterfall.html",
+				"dist/demos/popup.html",
+				"dist/demos/index.html",
+				"dist/demos/images/swiper-1.jpg",
+				"hui/demo/allviews.html",
+				"dist/demos/cols.html",
+				"hui/img/index/unfold.png",
+				"hui/demo/selecter.html",
+				"hui/img/list/home.png",
+				"dist/demos/pull-to-refresh-with-navbar.html",
+				"hui/img/startbanner/1.png",
+				"hui/img/index/search.png",
+				"img/6D.jpg",
+				"hui/demo/account.html",
+				"img/F3.jpg",
+				"dist/demos/picker.html",
+				"hui/js/hui-image-cuter.js",
+				"dist/demos/noti.html",
+				"hui/demo/pager.html",
+				"dist/demos/navbar.html",
+				"hui/img/index/window.png",
+				"hui/img/index/medialist.png",
+				"hui/img/imglist/3.jpg",
+				"hui/plug-ins/phoneswipe/default-skin.svg",
+				"hui/img/index/list.png",
+				"hui/img/index/views.png",
+				"hui/demo/imgcut.html",
+				"hui/demo/unfold.html",
+				"hui/demo/imgpreview.html",
+				"dist/demos/images/pic_160.png",
+				"hui/demo/indexlist.html",
+				"dist/demos/tpl-shopping-cart.html",
+				"hui/demo/datepicker.html",
+				"dist/demos/images/icon_nav_cell.png",
+				"hui/demo/header.html",
+				"hui/img/index/subpage.png",
+				"hui/demo/footer.html",
+				"img/icon-dw.png",
+				"dist/demos/images/icon_nav_button.png",
+				"hui/demo/dialogs.html",
+				"img/0F.jpg",
+				"dist/demos/images/vcode.jpg",
+				"dist/demos/images/icon_nav_article.png",
+				"dist/demos/images/icon_nav_noti.png",
+				"hui/demo/each.html",
+				"img/AC.jpg",
+				"dist/demos/tpl-chat.html",
+				"dist/demos/action-sheet.html",
+				"hui/demo/selecter2.html",
+				"dist/demos/msg.html",
+				"hui/img/lazy.png",
+				"dist/demos/progress.html",
+				"hui/demo/switch.html",
+				"dist/js/jquery-weui.js",
+				"hui/img/index/icons.png",
+				"hui/demo/start.html",
+				"hui/img/index/toast.png",
+				"dist/demos/images/swiper-4.jpg",
+				"hui/demo/countdown.html",
+				"hui/demo/badge.html",
+				"dist/demos/form.html",
+				"dist/demos/images/icon_nav_select.png",
+				"hui/demo/on.html",
+				"hui/img/waterfull/water9.jpg",
+				"img/I.png",
+				"hui/js/hui-water-fall.js",
+				"dist/demos/grid.html",
+				"dist/demos/article.html",
+				"hui/demo/subpage_3.html",
+				"hui/demo/register.html",
+				"hui/demo/subpage_1.html",
+				"dist/demos/badge.html",
+				"hui/demo/create.html",
+				"hui/demo/base.html",
+				"hui/img/waterfull/water6.jpg",
+				"hui/img/index/html.png",
+				"img/CB.jpg",
+				"img/41.jpg",
+				"hui/demo/toast.html",
+				"js/search.js",
+				"dist/demos/swiper.html",
+				"hui/img/index/swiper.png",
+				"hui/img/index/touchpwd.png",
+				"img/EA.jpg",
+				"hui/demo/copy.html",
+				"dist/demos/images/icon_nav_city.png",
+				"hui/demo/loadmore.html",
+				"hui/img/index/select.png",
+				"hui/demo/swipedo.html",
+				"hui/demo/numberbox.html",
+				"hui/img/index/form.png",
+				"hui/img/index/formcheck.png",
+				"hui/demo/animate.css",
+				"hui/demo/scrollnews.html",
+				"hui/demo/touchpwd.html",
+				"hui/img/index/tab.png",
+				"dist/demos/datetime-picker.html",
+				"dist/demos/images/icon_nav_actionSheet.png",
+				"hui/demo/flex.html",
+				"hui/img/swipe/3.jpg",
+				"hui/img/imglist/4.jpg",
+				"hui/demo/subpage_2.html",
+				"img/D1.jpg",
+				"dist/demos/panel.html",
+				"hui/img/waterfull/water3.jpg",
+				"img/20.jpg",
+				"dist/demos/images/icon_nav_search_bar.png",
+				"hui/img/yzm.png",
+				"dist/demos/swipeout-with-ptr.html",
+				"hui/plug-ins/phoneswipe/default-skin.png",
+				"hui/img/index/header.png",
+				"hui/demo/fullmsg.html",
+				"hui/index.html",
+				"hui/img/index/clone.png",
+				"dist/lib/zepto.js",
+				"hui/img/waterfull/water1.jpg",
+				"hui/js/hui-refresh-load-more.js",
+				"hui/img/index/action.png",
+				"hui/img/index/pager.png",
+				"hui/img/index/loading.png",
+				"dist/demos/preview.html",
+				"dist/demos/images/icon_nav_ptr.png",
+				"hui/img/index/img.png",
+				"hui/img/startbanner/3.png",
+				"hui/img/waterfull/water4.jpg",
+				"hui/img/index/flex.png",
+				"hui/img/index/fger.png",
+				"hui/js/hui-popover-msg.js",
+				"dist/demos/searchbar.html",
+				"hui/img/gift.png",
+				"hui/img/index/fullmsg.png",
+				"hui/img/pre2.png",
+				"dist/demos/images/swiper-3.jpg",
+				"hui/demo/indexaction.html",
+				"hui/img/waterfull/water5.jpg",
+				"hui/img/imglist/1.jpg",
+				"hui/demo/h5createwindow.html",
+				"hui/demo/imglist.html",
+				"hui/img/swipe/1.jpg",
+				"hui/img/waterfull/water2.jpg",
+				"hui/img/index/actionsheet.png",
+				"dist/demos/tabbar.html",
+				"hui/js/hui-star.js",
+				"hui/demo/progress.html"
+			]
+		}
+	}
+}

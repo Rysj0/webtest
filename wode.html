@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>用户中心</title>
+
+<link rel="stylesheet" type="text/css" href="hui/css/hui.css" />
+<link rel="stylesheet" href="css/wode.css" />
+
+<!--引用jqweui css-->
+		<link rel="stylesheet" href="dist/lib/weui.min.css" />
+		<link rel="stylesheet" href="dist/css/jquery-weui.min.css" />
+		
+</head>
+
+<body>
+<header class="hui-header">
+    <h1>用户中心</h1>
+</header>
+<div class="hui-wrap">
+    <div class="hui-list" style="background:#FFFFFF; margin-top:28px;">
+        <a href="javascript:;" style="height:auto; height:80px; padding-bottom:8px;">
+            <div class="hui-list-icons" style="width:110px; height:80px;">
+                <img src="hui/img/list/home.png" style="width:66px; margin:0px; border-radius:50%;" />
+            </div>
+            <div class="hui-list-text" style="height:79px; line-height:79px;">
+                <div class="hui-list-text-content">
+                    用户名
+                </div>
+                <div class="hui-list-info">
+                    <span class="hui-icons hui-icons-right"></span>
+                </div>
+            </div>
+        </a>
+        <a href="javascript:hui.toast('Hello Hcoder UI !');">
+            <div class="hui-list-text">
+                账户余额 : 1000元 | 积分 : 2000
+            </div>
+        </a>
+    </div>
+    <div class="hui-list" style="background:#FFFFFF; margin-top:28px;">
+        <ul>
+            <li>
+                <a href="javascript:void(0);">
+                    <div class="hui-list-icons">
+                        <img src="hui/img/list/sc.png" />
+                    </div>
+                    <div class="hui-list-text">
+                        我的收藏
+                        <div class="hui-list-info">
+                            <span class="hui-icons hui-icons-right"></span>
+                        </div>
+                    </div>
+                </a>
+               </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <div class="hui-list-icons">
+                        <img src="hui/img/list/ht.png" />
+                    </div>
+                    <div class="hui-list-text">
+                        我的话题
+                        <div class="hui-list-info">
+                            <span class="hui-icons hui-icons-right"></span>
+                        </div>
+                    </div>
+                </a>
+               </li>
+               <li>
+                <a href="javascript:void(0);">
+                    <div class="hui-list-icons">
+                        <img src="hui/img/list/order.png" />
+                    </div>
+                    <div class="hui-list-text">
+                        我的订单
+                        <div class="hui-list-info">
+                            <span class="hui-icons hui-icons-right"></span>
+                        </div>
+                    </div>
+                </a>
+               </li>
+               <li>
+                <a href="javascript:void(0);">
+                    <div class="hui-list-icons">
+                        <img src="hui/img/list/lishi.png" />
+                    </div>
+                    <div class="hui-list-text">
+                        历史足迹
+                        <div class="hui-list-info">
+                            <span class="hui-icons hui-icons-right"></span>
+                        </div>
+                    </div>
+                </a>
+               </li>
+        </ul>
+    </div>
+    <div style="background:#FFFFFF; margin-top:28px;">
+        <button type="button" class="hui-button hui-button-large" onclick="hui.toast('退出');">
+            <span class="hui-icons hui-icons-logoff"></span>退出系统
+           </button>
+    </div>
+</div>
+
+  <!-- 避免底部遮住商品展示-->
+			<div style="height:75px; line-height:75px; clear:both;"></div>
+			
+				
+			<!--底部-->
+			<div class="weui-tabbar" style="background-color: #FFFFFF;position: fixed;
+				z-index: 999; max-width: 640px;">
+				<a href="index.html" class="weui-tabbar__item weui-bar__item--on">
+					<!-- <span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span>-->
+					<div class="weui-tabbar__icon">
+						<img src="img/l-1.png" alt="">
+					</div>
+					<p class="weui-tabbar__label" style="color: #ADADAD">首页</p>
+				</a>
+				<a href="product.html" class="weui-tabbar__item">
+					<div class="weui-tabbar__icon">
+						<img src="img/0.png" alt="">
+					</div>
+					<p class="weui-tabbar__label"  style="color: #ADADAD">产品中心</p>
+				</a>
+				<a href="find.html" class="weui-tabbar__item">
+					<div class="weui-tabbar__icon">
+						<img src="img/faxian1.png" alt="">
+					</div>
+					<p class="weui-tabbar__label"  style="color: #ADADAD">发现</p>
+				</a>
+				<a href="javascript:;" class="weui-tabbar__item">
+					<div class="weui-tabbar__icon">
+						<img src="img/wode.png" alt=""  ;">
+					</div>
+					<p class="weui-tabbar__label"  style="color: #FF9224;">我</p>
+				</a>
+			</div>
+	       
+<script type="text/javascript" src="hui/js/hui.js" charset="UTF-8"></script>
+</body>
+</html>

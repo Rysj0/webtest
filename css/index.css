@@ -1,0 +1,420 @@
+/*重置样式css*/
+
+body {
+	margin: 0;
+	padding: 0 5px;
+	background: #FFFFFF;
+}
+
+.hui-header {
+	width: 100%;
+	background: #E1E1E1;
+}
+
+.head-img-logo {
+	width: 24%;
+}
+
+.head-img-logo img {
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+}
+
+.head-img-login {
+	width: 20%;
+}
+
+.head-img-login img {
+	width: 27px;
+	height: 27px;
+	margin-top: 8px;
+}
+
+
+/*头部图片设置*/
+
+.hui-news-list {
+	margin-top: 45px;
+	width: 100%;
+}
+
+.hui-news-list li {
+	position: relative;
+	width: 100%;
+	border-bottom: 1px solid #E4E3E6;
+	overflow: hidden;
+}
+
+.hui-news-list li:last-child {
+	border: none;
+}
+
+.hui-news-list div {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	word-break: break-word;
+}
+
+.hui-news-list-img img {
+	width: 100%;
+}
+
+
+/*导航栏*/
+
+.head-nav {
+	width: 100%;
+	background: #FFFFFF;
+}
+
+.head-nav nav ul {
+	width: 100%;
+	padding: 10px 0;
+	/*上下10px。左右0px*/
+}
+
+.head-nav nav ul li {
+	width: 25%;
+	float: left;
+}
+
+.head-nav nav ul li a {
+	display: block;
+	/*块级元素*/
+}
+
+.head-nav nav ul li a img {
+	width: 35px;
+	height: 35px;
+	display: block;
+	/*没有间隙*/
+	margin: 0 auto;
+	/*左右居中*/
+}
+
+.head-nav nav ul li a p {
+	text-align: center;
+	color: #666;
+	font-size: 14px;
+	padding: 15px 0;
+	/*上下间隔6px。左右0px*/
+}
+
+
+/*中部*/
+
+
+/*标题*/
+
+.hui-common-title {
+	height: 68px;
+	background: #FFFFFF;
+	float: left;
+}
+
+.hui-common-title div {
+	text-align: center;
+	line-height: 68px;
+}
+
+.hui-common-title-txt {
+	width: 86%;
+}
+
+.hui-common-title-txt p {
+	font-size: 16px;
+	color: #000000;
+}
+
+.hui-common-title-txt p span {
+	font-size: 18px;
+	color: #000000;
+	font-weight: bold; //字体加粗
+}
+
+.hui-common-title-line {
+	width: 7%;
+	height: 2px;
+	margin-top: 34px;
+}
+
+
+/*体验*/
+
+.hui-img-list {
+	width: 100%;
+	background: #FFFFFF;
+}
+
+#list2 li {
+	width: 50%;
+	padding: 0 10px;
+	float: left;
+}
+
+#list2 h1 {
+	font-size: 20px;
+	color: #FFBE00;
+	margin-left: 5px;
+}
+
+#list2 h1 span {
+	font-size: 20px;
+	color: #3D4145； margin-left: 5px;
+}
+
+.hui-img-list-content p {
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.experience-p-style p {
+	margin-left: 5px;
+	margin-top: 0px;
+	font-size: 12px;
+	opacity: 0.8;
+}
+
+
+/*挑选内容*/
+.hui-swipe{
+	margin-bottom: 8px;
+}
+
+/*左边*/
+
+.left {
+	width: 31%;
+	
+	background: #FFFFFF;
+	float: left;
+	display: inline-block;
+	position: absolute;
+	border-top: 1px solid #C9C9C9;
+}
+
+.left ul li {
+	width: 100%;
+	height: 107px;
+	border-bottom: 1px solid #C9C9C9;
+}
+
+.wrap-main-left {
+	width: 23%;
+	float: left;
+	text-align: center;
+}
+
+.wrap-main-left span {
+	line-height: 105px;
+	color: #ADADAD;
+	font-size: 20px;
+}
+
+.wrap-main-right {
+	margin-top: 10px;
+	float: right;
+	width: 75%;
+}
+
+.wrap-main-right span {
+	margin-top: 3px;
+	font-size: 12px;
+}
+
+.span-styles span {
+	font-weight: bold;
+}
+
+.span-style span {
+	margin-left: 2%;
+	font-size: 8px;
+	opacity: 0.8;
+}
+.#tab2 {
+	display: none;
+}
+.nav-content-color span{
+	color: orange;
+	
+	
+}
+
+
+/*右边*/
+
+.demo2 {
+	
+	width: 67%;
+	float: right;
+	background: #FFFFFF;
+	color: #FFFFFF;
+}
+
+.wrap-main-top {
+	margin-bottom: 15px;
+	width: 50%;
+	padding: 0 3px;
+	float: left;
+	box-sizing: border-box;
+}
+
+.wrap-main-true ul li img {
+	width: 100%;
+}
+
+
+/*优势*/
+
+.wrap-adv-list {
+	width: 100%;
+	margin: 0 auto;
+	background-size: cover;
+	position: relative;
+}
+
+.wrap-adv-list ul li {
+	margin-top: 10px;
+}
+
+.wrap-adv-list ul li img {
+	width: 100%;
+}
+
+.wrap-adv-title p {
+	font-size: 14px;
+	color: #FFBE00;
+	margin-left: 5px;
+	font-weight: bold;
+}
+
+.wrap-adv-words {
+	margin-left: 12px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.wrap-adv-content {
+	margin-left: 12px;
+}
+
+.wrap-adv-content p {
+	font-size: 12px;
+	opacity: 0.6;
+}
+
+
+/*评价 */
+
+#list3 li {
+	width: 50%;
+	float: left;
+	padding: 0 5px;
+}
+
+#list3 li img {
+	height: 80%;
+}
+
+#list3 h1 {
+	margin-top: 8px;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	color: #09BB07;
+}
+
+.hui-img-list-contents p {
+	margin-top: 5px;
+	font-size: 12px;
+	opacity: 0.8;
+}
+
+.img-select-more img {
+	position: absolute;
+	top: 20%;
+}
+
+
+/*推荐*/
+
+.recommend-eav-top {
+	width: 50%;
+	padding: 0 5px;
+	float: left;
+	height: 250px;
+	background: #FFFFFF;
+	display: flex;
+	align-items: center;
+	/*垂直居中*/
+	justify-content: center;
+	/*水平居中*/
+}
+
+.recommend-eav-top img {
+	width: 100%;
+	max-width: 250px;
+	_width: expression(this.width > 250 ? "250px": this.width);
+	/* 当宽高等于盒子高度是图片大小不变*/
+	vertical-align: middle;
+	align-items: center;
+}
+
+.recommend-eav-top ul li {
+	margin-top: 10px;
+}
+
+.recommend-commen-title p {
+	margin-top: 18px;
+	text-align: center;
+	font-size: 14px;
+	color: #09BB07;
+}
+
+.recommend-commen-content p {
+	font-size: 11px;
+	opacity: 0.8;
+}
+
+
+/*门面 报道*/
+
+.wrap-face-img {
+	width: 100%;
+}
+
+.wrap-face-img img {
+	width: 100%;
+}
+/*成绩轮播*/
+#swipe2 .hui-swipe-item img {
+	width: 60%;
+	margin-left: 20%;
+}
+
+#swipe2 .hui-swipe-indicator {
+	width: 70%;
+}
+
+#swipe2 .hui-swipe-indicators {
+	width: 6px;
+	border-radius: 3px;
+	height: 6px;
+	background: #ADADAD;
+	float: left;
+	margin: 0px 3px;
+}
+
+#swipe2 .hui-swipe-indicator-active {
+	background: #F0AD4E !important;
+}
+
+
+/*底部按钮*/
+
+.weui-tabbar__label {
+	margin-bottom: 0;
+}

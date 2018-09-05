@@ -1,0 +1,159 @@
+body {
+	list-style: none;
+	background: #FFFFFF;
+	font-family: "微软雅黑";
+}
+
+
+/*主体盒子*/
+
+.index-layout {
+	width: 100%;
+	max-width: 680px;
+	/*设计图的原因， 不让他放大*/
+	min-width: 300px;
+	/*为了更好的布局显示*/
+	margin: 0 auto;
+	/*居中*/
+	position: relative;
+}
+/*头部*/
+
+.head_header {
+	width: 100%;
+	height: 60px;
+	background: #EDEDED;
+	position: relative;
+}
+
+.head-header-return {
+	width: 20%;
+	height: 60px;
+	line-height: 60px;
+	float: left;
+}
+
+.head-header-return img {
+	margin-left: 35px;
+	width: 30px;
+	height: 30px;
+	margin-top: 15px;
+	
+}
+
+.head-header-title {
+	width: 80%;
+	float: left;
+	font-size: 18px;
+    opacity: 0.8;
+	text-align: center;
+}
+
+.head-header-title span {
+	
+	height: 60px;
+	line-height: 60px;
+}
+
+
+
+/*输入框*/
+.section-wrap-text{
+	margin-bottom: 20px;
+	margin-top: 20px;
+	width: 100%;
+	height: 35px;
+	float: left;
+	
+}
+.seach-input{
+	width: 80%;
+	height: 35px;
+	background: #C9C9C9;
+	opacity: 0.8;
+	margin-left: 10%;
+	border-radius: 10px;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-align: center;
+}
+.seach-submit{
+	width: 15%;
+	height: 35px;
+	font-size: 14px;
+	border-radius: 5px;
+}
+
+.search-prompt-box{
+	
+	width:65%;
+	border: 1px solid #FFFFFF;
+	margin-left: 10%;
+	margin-top: none;
+	display: none;
+	}
+	
+.search-prompt-box ul li{
+		list-style: none;
+		line-height: 25px;
+		padding-left: 10px;
+		}
+.search-prompt-box ul li:hover{
+		background: #BCBCBC;
+		}		
+
+  
+.sel{
+	background:#BCBCBC;
+}
+/*产品类型*/
+.section-wrap-titie ul li{
+	font-size: 16px;
+	text-align: center;
+	color: #FFA500;
+	border-top: 1px solid #C9C9C9;
+	
+}
+.section-wrap-titie ul li p{
+	text-shadow: 1px 1px 1px #FF0000;
+}
+.section-wrap-img {
+	margin-top: 20px;
+	margin-left: -5px;
+	margin-right: -5px;
+	overflow: hidden;
+	
+}
+
+.section-wrap-list {
+	width: 46%;
+	padding: 0 2px;
+	float: left;
+	margin-left: 2%;
+	box-sizing: border-box;
+}
+.wrap-img-list {
+	height: 160px;
+	background: #FFFFFF;
+	position: relative;
+}
+.wrap-img-list img {
+	width: 100%;
+	height: 100px;
+}
+
+.img-list-content1{
+	font-size: 10px;
+	text-align: center;
+	color: #000000;
+	opacity: 0.8;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.img-list-content2{
+	font-size: 10px;
+	color: brown;
+	text-align: center;
+}
+
+
