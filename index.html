@@ -27,7 +27,7 @@
 			<div id="hui-header-sreach">
 				<div id="hui-header-sreach-icon"></div>
 				<form action="search.html">
-					<input type="submit" id="searchKey" value="请输入商品关键字" style="background: #FFFFFF;" /></form>
+					<input type="submit" id="searchKey" value="请输入商品关键字" style="background: #FFFFFF; color: #000000;" /></form>
 			</div>
 			<div class="head-img-login">
 				<img src="img/wode1.png" />
@@ -45,7 +45,7 @@
 				</li>
 			</ul>
 		</div>
-		
+
 		<!--头部导航-->
 		<div class="mui-content">
 
@@ -195,7 +195,7 @@
 
 			<ul>
 				<li class="nav-content-color">
-					<a href="#tab1">
+					<a href="javascript:;" id="tb1">
 						<div class="wrap-main-num">
 							<div class="wrap-main-left">
 								<span>01</span>
@@ -210,7 +210,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#tab2">
+					<a href="javascript:;" id="tb2">
 						<div class="wrap-main-num">
 							<div class="wrap-main-left">
 								<span>02</span>
@@ -224,7 +224,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#tab3">
+					<a href="javascript:;" id="tb3">
 						<div class="wrap-main-num">
 							<div class="wrap-main-left">
 								<span>03</span>
@@ -238,7 +238,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#tab4">
+					<a href="javascript:;" id="tb4">
 						<div class="wrap-main-num">
 							<div class="wrap-main-left">
 								<span>04</span>
@@ -252,7 +252,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#tab5">
+					<a href="javascript:;" id="tb5">
 						<div class="wrap-main-num">
 							<div class="wrap-main-left">
 								<span>05</span>
@@ -266,7 +266,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#tab6">
+					<a href="javascript:;" id="tb6">
 						<div class="wrap-main-num">
 							<div class="wrap-main-left">
 								<span>06</span>
@@ -894,7 +894,7 @@
 
 				</div>
 				<!-- 避免底部遮住商品展示-->
-				<div style="height:75px; line-height:75px; clear:both;"></div>
+				<div style="height:50px; line-height:50px; clear:both;"></div>
 
 				<!--底部-->
 				<div class="weui-tabbar" style="background-color: #FFFFFF; position: fixed;
@@ -939,8 +939,31 @@
 					swipe.autoPlay = false;
 					swipe.run();
 
+                       //挑选跳转页面
+					document.querySelector("#tb1").onclick = function() {
+						document.querySelector("#tab1").scrollIntoView(true);
+					}
+
+					document.querySelector("#tb2").onclick = function() {
+						document.querySelector("#tab2").scrollIntoView(true);
+					}
+					document.querySelector("#tb3").onclick = function() {
+						document.querySelector("#tab3").scrollIntoView(true);
+					}
+
+					document.querySelector("#tb4").onclick = function() {
+						document.querySelector("#tab4").scrollIntoView(true);
+					}
+					document.querySelector("#tb5").onclick = function() {
+						document.querySelector("#tab5").scrollIntoView(true);
+					}
+
+					document.querySelector("#tb6").onclick = function() {
+						document.querySelector("#tab6").scrollIntoView(true);
+					}
+
 					//挑选内容
-                 
+
 					//改变左边选中的样式
 					$('.left li').click(function() {
 						$('.left li').removeClass('nav-content-color');
@@ -956,12 +979,8 @@
 					swipe2.indicatorOn = true
 					swipe2.run();
 
-					
-
 					//挑选滑动
 					hui('#demo2').scrollY(640);
-
-					
 				</script>
 	</body>
 

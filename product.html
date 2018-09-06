@@ -4,9 +4,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<title>HUI</title>
+		<title>产品中心</title>
 		<link rel="stylesheet" type="text/css" href="hui/css/hui.css" />
-		<link rel="stylesheet" href="css/base.css" />
 		<link rel="stylesheet" href="css/product.css" />
 		
 		<!--引用jqweui css-->
@@ -16,16 +15,16 @@
 	</head>
 
 	<body>
+		<div class="head-list" id="head-list">
 		<header class="hui-header">
 			
 			<h1>产品中心</h1>
 			<!--<img src="img/search.png"/ style="width: 35px;height: 25px;text-align:">-->
-		</header>
-		<div class="hui-wrap">
-
+		
+        </header>
 			<!--头部照片-->
 
-		<div class="hui-news-list">
+		<div class="hui-news-list" style="margin-top: 45px;">
 			<ul>
 				<li>
 					<div class="hui-news-list-img">
@@ -34,6 +33,7 @@
 				</li>
 			</ul>
 		</div>
+	</div>
 <!--左边-->
 			<div class="left">
 				<!--左边导航栏-->
@@ -41,22 +41,22 @@
 				<ul>
 					<p>新品</p>
 					<li class="nav-content-color">
-						<a href="#tab1">温馨浪漫</a>
+						<a href="javascript:;">温馨浪漫</a>
 					</li>
 					<li>
-						<a href="#tab2">春夏休闲</a>
+						<a href="javascript:;">春夏休闲</a>
 					</li>
 					<li>
-						<a href="#tab3">青少年</a>
+						<a href="javascript:;">青少年</a>
 					</li>
 					<li>
-						<a href="#tab4">新中式</a>
+						<a href="javascript:;">新中式</a>
 					</li>
 					<li>
-						<a href="#tab5">新代客厅</a>
+						<a href="javascript:;">新代客厅</a>
 					</li>
 					<li>
-						<a href="#tab6">欧式奢华</a>
+						<a href="javascript:;">欧式奢华</a>
 					</li>
 				</ul>
 
@@ -1891,6 +1891,7 @@
 			</div>
 		</div>
 		</div>
+
 		
 		<!-- 避免底部遮住商品展示-->
 			<div style="height:50px; line-height:50px; clear:both;"></div>
@@ -1924,7 +1925,9 @@
 					<p class="weui-tabbar__label" style="color: #ADADAD">我的</p>
 				</a>
 			</div>
-
+  
+  
+  
 		<script src="hui/js/hui.js" type="text/javascript" charset="utf-8"></script>
 		<script src="hui/js/hui-tab.js" type="text/javascript"></script>
 
@@ -1938,13 +1941,75 @@
 		<script src="dist/js/city-picker.min.js"></script>
 		<script>
 //			//改变左边选中的样式
-			$('.left li').click(function() {
-				$('.left li').removeClass('nav-content-color');
-				$(this).addClass('nav-content-color')
-			})
+//			$('.left li').click(function() {
+//				$('.left li').removeClass('nav-content-color');
+//				$(this).addClass('nav-content-color')
+//			})
 			
 			
-			hui('#demo2').scrollY(400);
+	var daohang = $(".left"); //左边楼层标签
+	var imgtitle = $("#demo2"); //右边图片标签
+    var li = $(".left li"); //获取目录li
+    var main = $("#demo2 .demo2"); //右边内容
+    window.onbeforeunload = onbeforeunload_handler;  
+    function onbeforeunload_handler() {
+        window.location.reload();  
+        $(window).scrollTop(0)
+    }
+    
+       
+    $(window).scroll(function() {
+        //获取到页面总高度
+        var HeightAll = $("html,body").height();
+        //获取到头部高度
+          var HeaderHeight1 = $(".hui-header").height();
+         //获取到头部照片高度
+          var HeaderHeight2 = $(".hui-news-list").height();
+         //获取到头部总高度高度
+          var HeaderHeights = $(".head-list").height();
+          
+          
+          
+//        console.log(HeaderHeight1);
+//        console.log(HeaderHeight2);
+//        console.log(HeaderHeights);
+//        console.log(HeightAll);
+        //获取滚动条位置
+        var iTop = $(window).scrollTop();
+        for (var i = 0; i < main.length; i++) {
+            //楼层的显示和隐藏
+            if (iTop > HeaderHeight2 && iTop < HeightAll) {
+                daohang.css({"position":"fixed", top: HeaderHeight1+'px'})
+            }else if(iTop =HeaderHeight2){
+                daohang.css({"position":"absolute", top:HeaderHeights+'px'})
+            }else if(iTop =HeightAll){
+            	 daohang.css({"position":"absolute", top: HeaderHeight1+'px'})
+            }
+            //楼层的联动
+            var num = 0
+            for (var i = 0; i < main.length; i++) {
+                if (iTop >= main[i].offsetTop) {
+                    num = i;
+                }
+                li[i].className = ''; //设置li中的class为空
+            };
+            li[num].className = 'nav-content-color';
+            for (var i = 0; i < li.length; i++) {
+                li[i].onclick = function() {
+                    for (var j = 0; j < li.length; j++) {
+                        if (this == li[j]) {
+                            $("html,body").animate({
+                                scrollTop: main[j].offsetTop
+                            }, 500);
+                        }
+                    }
+                }
+            }
+        }
+    })
+			
+			
+//			hui('#demo2').scrollY(400);
 		</script>
 
 	</body>

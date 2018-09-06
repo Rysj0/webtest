@@ -10,7 +10,9 @@ body {
 	width: 100%;
 	background: #E1E1E1;
 }
-
+form input{
+	color: #000000;
+}
 .head-img-logo {
 	width: 24%;
 }
